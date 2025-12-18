@@ -19,6 +19,15 @@ class Quote {
       category: json['category'] ?? 'General',
     );
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'text': text,
+      'author': author,
+      'category': category,
+    };
+  }
 }
 
 class Pagination {
